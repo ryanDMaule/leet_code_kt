@@ -1,4 +1,4 @@
-package com.mauleCo.leetcode
+package com.mauleCo.leetcode.HARD
 
 class MedianOfTwoSortedArrays {
 

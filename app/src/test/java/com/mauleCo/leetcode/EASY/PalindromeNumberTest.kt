@@ -1,5 +1,6 @@
-package com.mauleCo.leetcode
+package com.mauleCo.leetcode.EASY
 
+import com.mauleCo.leetcode.EASY.PalindromeNumber
 import org.hamcrest.CoreMatchers
 import org.junit.Assert
 import org.junit.Before

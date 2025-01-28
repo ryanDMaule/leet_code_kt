@@ -1,5 +1,6 @@
-package com.mauleCo.leetcode
+package com.mauleCo.leetcode.HARD
 
+import com.mauleCo.leetcode.HARD.MedianOfTwoSortedArrays
 import org.hamcrest.CoreMatchers
 import org.junit.Assert
 import org.junit.Before

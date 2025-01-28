@@ -1,4 +1,4 @@
-package com.mauleCo.leetcode
+package com.mauleCo.leetcode.EASY
 
 @Suppress("KotlinConstantConditions")
 class RomanToInteger {
