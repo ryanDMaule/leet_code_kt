@@ -12,7 +12,7 @@ class LongestCommonPrefix {
 
     fun longestCommonPrefix(strs: Array<String>): String {
         var longestPrefix = ""
-        var selectedWord = strs[0]
+        val selectedWord = strs[0]
         for (i in selectedWord.indices){
             val prefix = StringBuilder()
             prefix.append(selectedWord.take(i+1))
