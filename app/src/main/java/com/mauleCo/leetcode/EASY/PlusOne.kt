@@ -13,6 +13,17 @@ class PlusOne {
      */
 
     fun plusOne(digits: IntArray): IntArray {
+        for (i in digits.indices.reversed()) {
+            if (digits[i] < 9) {
+                digits[i] += 1
+                return digits
+            }
+            digits[i] = 0
+        }
+        return intArrayOf(1, *digits)
+    }
+
+    fun plusOneHack(digits: IntArray): IntArray {
         val sb = StringBuilder()
         digits.forEach { sb.append(it) }
         val num = sb.toString().toLong() + 1
