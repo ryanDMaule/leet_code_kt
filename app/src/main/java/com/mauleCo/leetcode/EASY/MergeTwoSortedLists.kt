@@ -1,5 +1,7 @@
 package com.mauleCo.leetcode.EASY
 
+import com.mauleCo.leetcode.ListNode
+
 class MergeTwoSortedLists {
 
     /**
@@ -11,11 +13,6 @@ class MergeTwoSortedLists {
      *
      * Return the head of the merged linked list.
      */
-
-    class ListNode(
-        var `val`: Int,
-        var next: ListNode? = null
-    )
 
     fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
         //MUTABLE VERSIONS OF PASSED NODES
@@ -62,27 +59,6 @@ class MergeTwoSortedLists {
             return list1
         }
         return list2
-    }
-
-    fun listToLinkedList(nums: List<Int>): ListNode? {
-        if (nums.isEmpty()) return null
-        val dummy = ListNode(0)
-        var current = dummy
-        for (num in nums) {
-            current.next = ListNode(num)
-            current = current.next!!
-        }
-        return dummy.next
-    }
-
-    fun linkedListToString(head: ListNode?): String {
-        val result = mutableListOf<Int>()
-        var current = head
-        while (current != null) {
-            result.add(current.`val`)
-            current = current.next
-        }
-        return result.toString()
     }
 
 }
